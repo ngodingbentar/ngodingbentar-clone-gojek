@@ -420,7 +420,7 @@ export default class App extends Component {
             </View>
 
             {/* internal information section */}
-            <View style={{padding: 16}}>
+            <View style={{padding: 16, paddingBottom: 0}}>
               <View style={{height: 15, width: 60, marginLeft: -4}}>
                 <Image
                   source={require('./logo/gojek.png')}
@@ -447,8 +447,23 @@ export default class App extends Component {
                   <Image source={require('./dummy/facebook-connect.png')} />
                 </View>
                 <View style={{marginLeft: 16, flex: 1}}>
-                  <Text style={{fontSize: 15, fontWeight: 'bold', color: '#4A4A4A'}}>Connect with facebook</Text>
-                  <Text style={{fontSize: 15, fontWeight: 'normal', color: '#4A4A4A', width: '70%'}}>Login faster without verification code</Text>
+                  <Text
+                    style={{
+                      fontSize: 15,
+                      fontWeight: 'bold',
+                      color: '#4A4A4A',
+                    }}>
+                    Connect with facebook
+                  </Text>
+                  <Text
+                    style={{
+                      fontSize: 15,
+                      fontWeight: 'normal',
+                      color: '#4A4A4A',
+                      width: '70%',
+                    }}>
+                    Login faster without verification code
+                  </Text>
                 </View>
               </View>
               <TouchableOpacity
@@ -477,6 +492,7 @@ export default class App extends Component {
                 }}
               />
             </View>
+
             {/* gofood banner section */}
             <View style={{padding: 16}}>
               <View style={{position: 'relative'}}>
@@ -571,6 +587,164 @@ export default class App extends Component {
               />
             </View>
             {/* end gofood banner */}
+
+            {/* Nearby gofood */}
+            <View>
+              <View style={{height: 15, width: 60, marginLeft: 16}}>
+                <Image
+                  source={require('./logo/go-food.png')}
+                  style={{
+                    height: undefined,
+                    width: undefined,
+                    resizeMode: 'contain',
+                    flex: 1,
+                  }}
+                />
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  justifyContent: 'space-between',
+                  marginBottom: 16,
+                  paddingHorizontal: 16,
+                }}>
+                <Text
+                  style={{fontSize: 17, fontWeight: 'bold', color: '#1C1C1C'}}>
+                  Nearby Restaurant
+                </Text>
+                <Text
+                  style={{fontSize: 17, fontWeight: 'bold', color: '#61A756'}}>
+                  See All
+                </Text>
+              </View>
+              <ScrollView
+                horizontal
+                style={{flexDirection: 'row', paddingLeft: 16}}>
+                <View style={{marginRight: 16}}>
+                  <View style={{width: 150, height: 150, borderRadius: 10}}>
+                    <Image
+                      source={require('./dummy/go-food-kfc.jpg')}
+                      style={{
+                        height: undefined,
+                        width: undefined,
+                        resizeMode: 'cover',
+                        flex: 1,
+                        borderRadius: 10,
+                      }}
+                    />
+                  </View>
+                  <Text
+                    style={{
+                      fontSize: 16,
+                      fontWeight: 'bold',
+                      color: '#1C1C1C',
+                      marginTop: 12,
+                    }}>
+                    Sederhana Minang
+                  </Text>
+                </View>
+                <View style={{marginRight: 16}}>
+                  <View style={{width: 150, height: 150, borderRadius: 10}}>
+                    <Image
+                      source={require('./dummy/go-food-kfc.jpg')}
+                      style={{
+                        height: undefined,
+                        width: undefined,
+                        resizeMode: 'cover',
+                        flex: 1,
+                        borderRadius: 10,
+                      }}
+                    />
+                  </View>
+                  <Text
+                    style={{
+                      fontSize: 16,
+                      fontWeight: 'bold',
+                      color: '#1C1C1C',
+                      marginTop: 12,
+                    }}>
+                    Sederhana Minang
+                  </Text>
+                </View>
+                <View style={{marginRight: 16}}>
+                  <View style={{width: 150, height: 150, borderRadius: 10}}>
+                    <Image
+                      source={require('./dummy/go-food-kfc.jpg')}
+                      style={{
+                        height: undefined,
+                        width: undefined,
+                        resizeMode: 'cover',
+                        flex: 1,
+                        borderRadius: 10,
+                      }}
+                    />
+                  </View>
+                  <Text
+                    style={{
+                      fontSize: 16,
+                      fontWeight: 'bold',
+                      color: '#1C1C1C',
+                      marginTop: 12,
+                    }}>
+                    Sederhana Minang
+                  </Text>
+                </View>
+                <View style={{marginRight: 16}}>
+                  <View style={{width: 150, height: 150, borderRadius: 10}}>
+                    <Image
+                      source={require('./dummy/go-food-kfc.jpg')}
+                      style={{
+                        height: undefined,
+                        width: undefined,
+                        resizeMode: 'cover',
+                        flex: 1,
+                        borderRadius: 10,
+                      }}
+                    />
+                  </View>
+                  <Text
+                    style={{
+                      fontSize: 16,
+                      fontWeight: 'bold',
+                      color: '#1C1C1C',
+                      marginTop: 12,
+                    }}>
+                    Sederhana Minang
+                  </Text>
+                </View>
+                <View style={{marginRight: 16}}>
+                  <View style={{width: 150, height: 150, borderRadius: 10}}>
+                    <Image
+                      source={require('./dummy/go-food-kfc.jpg')}
+                      style={{
+                        height: undefined,
+                        width: undefined,
+                        resizeMode: 'cover',
+                        flex: 1,
+                        borderRadius: 10,
+                      }}
+                    />
+                  </View>
+                  <Text
+                    style={{
+                      fontSize: 16,
+                      fontWeight: 'bold',
+                      color: '#1C1C1C',
+                      marginTop: 12,
+                    }}>
+                    Sederhana Minang
+                  </Text>
+                </View>
+              </ScrollView>
+              <View
+                style={{
+                  borderBottomColor: '#E8E9ED',
+                  borderBottomWidth: 1,
+                  marginTop: 16,
+                  marginHorizontal: 16,
+                }}
+              />
+            </View>
           </ScrollView>
         </View>
         <View

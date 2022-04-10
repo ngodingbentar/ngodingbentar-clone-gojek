@@ -15,6 +15,7 @@ import GoNews from './src/components/molecules/GoNews';
 import GopayFeature from './src/components/molecules/GopayFeature';
 import MainFeature from './src/components/molecules/MainFeature';
 import SearchFeature from './src/components/molecules/SearchFeature';
+import Navbar from './src/containers/organisms/Navbar';
 import ScrollableProduct from './src/containers/organisms/ScrollableProduct';
 export default class App extends Component {
   render() {
@@ -135,59 +136,7 @@ export default class App extends Component {
             <ScrollableProduct />
           </ScrollView>
         </View>
-        <View
-          style={{height: 54, flexDirection: 'row', backgroundColor: 'white'}}>
-          <View
-            style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Image
-              style={{width: 26, height: 26}}
-              source={require('./src/assets/icon/home-active.png')}
-            />
-            <Text style={{fontSize: 10, color: '#43AB4A', marginTop: 4}}>
-              Home
-            </Text>
-          </View>
-          <View
-            style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Image
-              style={{width: 26, height: 26}}
-              source={require('./src/assets/icon/order.png')}
-            />
-            <Text style={{fontSize: 10, color: '#545454', marginTop: 4}}>
-              Orders
-            </Text>
-          </View>
-          <View
-            style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Image
-              style={{width: 26, height: 26}}
-              source={require('./src/assets/icon/help.png')}
-            />
-            <Text style={{fontSize: 10, color: '#545454', marginTop: 4}}>
-              help
-            </Text>
-          </View>
-          <View
-            style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Image
-              style={{width: 26, height: 26}}
-              source={require('./src/assets/icon/inbox.png')}
-            />
-            <Text style={{fontSize: 10, color: '#545454', marginTop: 4}}>
-              inbox
-            </Text>
-          </View>
-          <View
-            style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Image
-              style={{width: 26, height: 26}}
-              source={require('./src/assets/icon/account.png')}
-            />
-            <Text style={{fontSize: 10, color: '#545454', marginTop: 4}}>
-              account
-            </Text>
-          </View>
-        </View>
+        <Navbar />
       </View>
     );
   }

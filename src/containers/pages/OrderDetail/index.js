@@ -1,10 +1,8 @@
-import React from "react"
-import { Text } from "react-native"
+import React from 'react';
+import {Text} from 'react-native';
 
 const OrderDetail = () => {
-    return (
-        <Text>Order Detail Page</Text>
-    )
-}
+  return <Text>Order Detail Page</Text>;
+};
 
-export default OrderDetail
+export default OrderDetail;

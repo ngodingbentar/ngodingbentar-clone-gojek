@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {View, Image, Text} from 'react-native';
+import { withNavigation } from 'react-navigation';
 import GopayFeature from '../../../components/molecules/GopayFeature';
 
 class HomeGopay extends Component {
@@ -32,6 +33,7 @@ class HomeGopay extends Component {
           <GopayFeature
             title="Pay"
             icon={require('../../../assets/icon/pay.png')}
+            onPress={() => this.props.navigation.navigate('ScanQRCode')}
           />
           <GopayFeature
             title="Nearby"
@@ -51,4 +53,4 @@ class HomeGopay extends Component {
   }
 }
 
-export default HomeGopay;
+export default withNavigation(HomeGopay);

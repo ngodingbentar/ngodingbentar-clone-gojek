@@ -1,12 +1,16 @@
 import React from 'react';
 import {Text, Image, View, TouchableOpacity} from 'react-native';
 
-const GoNews = props => {
+const GoNews = ({onPress}) => {
   return (
     <View style={{paddingTop: 16, paddingHorizontal: 16}}>
       <View style={{position: 'relative'}}>
-        <Image
+        {/* <Image
           source={props.img}
+          style={{height: 170, width: '100%', borderRadius: 6}}
+        /> */}
+        <Image
+          source={require('../../../assets/dummy/sepak-bola.jpg')}
           style={{height: 170, width: '100%', borderRadius: 6}}
         />
         <View
@@ -73,7 +77,8 @@ const GoNews = props => {
               fontWeight: 'bold',
               color: 'white',
               textAlign: 'center',
-            }}>
+            }}
+            onPress={onPress}>
             READ
           </Text>
         </TouchableOpacity>

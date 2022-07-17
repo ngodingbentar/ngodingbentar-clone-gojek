@@ -48,7 +48,7 @@ const Router = createSwitchNavigator(
   },
   {
     headerMode: 'none',
-    initialRouteName: 'HomeStack',
+    initialRouteName: 'ScanStack',
   },
 );
 
